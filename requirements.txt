@@ -1,0 +1,12 @@
+ markupsafe
+ werkzeug~=2.0.0
+ flask
+ sqlalchemy<2.0
+ flask_sqlalchemy==2.5.1
+ flask_session
+ psycopg2-binary 
+ Flask-SQLAlchemy
+ flask_login
+ Flask-Migrate
+ wheel
+ gunicorn

@@ -1,0 +1,109 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baravaja Fabric Crafts</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="nav-options">
+                <div class="language-currency">
+                    <select id="language">
+                        <option value="polish">Polish</option>
+                        <option value="english">English</option>
+                        <option value="russian">Russian</option>
+                    </select>
+                    <select id="currency">
+                        <option value="zloty">Zł</option>
+                        <option value="euro">Euro</option>
+                    </select>
+                </div>
+            </div>
+            <div class="nav-logo">
+                <a href="{{ url_for('home') }}">
+                    <img src="{{ url_for('static', filename='images/logo/logo.png') }}" alt="Baravaja Logo">
+                </a>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                  <li><a href="{{ url_for('home') }}">Home</a></li>
+                  <!-- {{ url_for('home') }} -->
+                  <li><a href="{{ url_for('login') }}">Log in or Register</a></li>
+                  <!-- 'login' -->  
+                  <li><a href="{{ url_for('shop') }}">Shop</a></li>
+                  <!-- 'shop' -->  
+                  <li><a href="{{ url_for('cart') }}">Cart</a></li>
+                  <!-- 'cart' -->  
+                  <!-- Add other navigation items as needed -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Slideshow -->
+        <div class="slideshow">
+            <!-- You may need to use Jinja2 to loop through images -->
+            <div class="slide">
+                <img src="{{ url_for('static',
+                filename='../static/images/slides/slide1.jpg') }}" alt="Slide 1">
+                <div class="slide-description">
+                    <p>Description for Slide 1</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="{{ url_for('static',
+                filename='../static/images/slides/slide2.jpeg') }}" alt="Slide 2">
+                <div class="slide-description">
+                    <p>Description for Slide 2</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="{{ url_for('static',
+                filename='../static/images/slides/slide3.jpeg') }}" alt="Slide 3">
+                <div class="slide-description">
+                    <p>Description for Slide 3</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="{{ url_for('static',
+                filename='../static/images/slides/slide4.jpeg') }}" alt="Slide 4">
+                <div class="slide-description">
+                    <p>Description for Slide 4</p>
+                </div>
+            </div>
+            <!-- Add more slides as needed -->
+
+            <!-- Navigation circles -->
+            <div class="nav-circles">
+                <span class="active"></span>
+                <!-- Add circles dynamically based on the number of slides -->
+            </div>
+        </div>
+
+        <!-- "Shop now!" button -->
+        <div class="shop-now">
+            <a href="">Shop now!</a>
+            <!-- 'shop' -->
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer content -->
+        <div class="footer-content">
+            <p>&copy; Baravaja Fabric Crafts 2023</p>
+            <p>Contact: Phone Number</p>
+            <!-- Add social media links with thumbnails -->
+        </div>
+    </footer>
+</body>
+
+</html>

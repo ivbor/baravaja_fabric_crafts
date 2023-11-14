@@ -1,0 +1,101 @@
+INFO:root:new app <Flask 'app'> successfully initialized
+INFO:app:new login <flask_login.login_manager.LoginManager object at 0x7f858a4ab310> successfully created
+INFO:app:new db <SQLAlchemy engine=None> successfully created within <Flask 'app'> context
+INFO:app:/home/ivbor/Data/Business/flask_site/var/app-instance
+INFO:app:tables inside db created
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.202.111:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:root:new app <Flask 'app'> successfully initialized
+INFO:app:new login <flask_login.login_manager.LoginManager object at 0x7fd20ab536d0> successfully created
+INFO:app:new db <SQLAlchemy engine=None> successfully created within <Flask 'app'> context
+INFO:app:/home/ivbor/Data/Business/flask_site/var/app-instance
+INFO:app:tables inside db created
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 158-907-866
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2023 06:54:38] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2023 06:54:38] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2023 06:54:38] "[33mGET /styles/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2023 06:54:38] "[33mGET /src/components/Header.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2023 06:54:38] "[33mGET /static/images/logo/logo.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2023 06:54:38] "[33mGET /static/images/social/twitter.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2023 06:54:38] "[33mGET /static/images/social/facebook.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2023 06:54:38] "[36mGET /static/images/social/instagram.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2023 06:55:22] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2023 06:55:22] "GET /home HTTP/1.1" 200 -
+WARNING:root:Exception raised while handling cache file '/home/ivbor/Data/Business/flask_site/flask_session/15d84b8b1991cf7c5b83a1c8fbc8abb7'
+Traceback (most recent call last):
+  File "/home/ivbor/Data/Business/flask_site/lib/python3.11/site-packages/cachelib/file.py", line 258, in set
+    fsize = Path(filename).stat().st_size
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/pathlib.py", line 1013, in stat
+    return os.stat(self, follow_symlinks=follow_symlinks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ivbor/Data/Business/flask_site/flask_session/15d84b8b1991cf7c5b83a1c8fbc8abb7'
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2023 06:55:22] "[33mGET /static/images/logo/logo.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2023 06:55:22] "[33mGET /src/components/Header.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2023 06:55:22] "[33mGET /static/images/social/twitter.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2023 06:55:22] "[33mGET /static/images/social/facebook.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2023 06:55:22] "[33mGET /styles/styles.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2023 06:55:22] "[36mGET /static/images/social/instagram.png HTTP/1.1[0m" 304 -
+INFO:root:new app <Flask 'app'> successfully initialized
+INFO:app:new login <flask_login.login_manager.LoginManager object at 0x7f3e566a94d0> successfully created
+INFO:app:new db <SQLAlchemy engine=None> successfully created within <Flask 'app'> context
+INFO:app:/home/ivbor/Data/Business/flask_site/var/app-instance
+INFO:app:tables inside db created
+INFO:root:new app <Flask 'app'> successfully initialized
+INFO:app:new login <flask_login.login_manager.LoginManager object at 0x7fbcc93b7250> successfully created
+INFO:app:new db <SQLAlchemy engine=None> successfully created within <Flask 'app'> context
+INFO:app:/home/ivbor/Data/Business/flask_site/var/app-instance
+INFO:app:tables inside db created
+INFO:root:new app <Flask 'app'> successfully initialized
+INFO:app:new login <flask_login.login_manager.LoginManager object at 0x7fbcc939dc10> successfully created
+INFO:app:new db <SQLAlchemy engine=None> successfully created within <Flask 'app'> context
+INFO:app:/home/ivbor/Data/Business/flask_site/var/app-instance
+INFO:app:tables inside db created
+INFO:root:new app <Flask 'app'> successfully initialized
+INFO:app:new login <flask_login.login_manager.LoginManager object at 0x7fbcc939dc10> successfully created
+INFO:app:new db <SQLAlchemy engine=None> successfully created within <Flask 'app'> context
+INFO:app:/home/ivbor/Data/Business/flask_site/var/app-instance
+INFO:app:tables inside db created
+INFO:root:new app <Flask 'app'> successfully initialized
+INFO:app:new login <flask_login.login_manager.LoginManager object at 0x7f259a457150> successfully created
+INFO:app:new db <SQLAlchemy engine=None> successfully created within <Flask 'app'> context
+INFO:app:/home/ivbor/Data/Business/flask_site/var/app-instance
+INFO:app:tables inside db created
+INFO:root:new app <Flask 'app'> successfully initialized
+INFO:app:new login <flask_login.login_manager.LoginManager object at 0x7f30a136af50> successfully created
+INFO:app:new db <SQLAlchemy engine=None> successfully created within <Flask 'app'> context
+INFO:app:/home/ivbor/Data/Business/flask_site/var/app-instance
+INFO:app:tables inside db created
+INFO:root:new app <Flask 'app'> successfully initialized
+INFO:app:new login <flask_login.login_manager.LoginManager object at 0x7f309fba5b50> successfully created
+INFO:app:new db <SQLAlchemy engine=None> successfully created within <Flask 'app'> context
+INFO:app:/home/ivbor/Data/Business/flask_site/var/app-instance
+INFO:app:tables inside db created
+INFO:root:new app <Flask 'app'> successfully initialized
+INFO:app:new login <flask_login.login_manager.LoginManager object at 0x7f73761a5a90> successfully created
+INFO:app:new db <SQLAlchemy engine=None> successfully created within <Flask 'app'> context
+INFO:app:/home/ivbor/Data/Business/flask_site/var/app-instance
+INFO:app:tables inside db created
+INFO:root:new app <Flask 'app'> successfully initialized
+INFO:app:new login <flask_login.login_manager.LoginManager object at 0x7f73761a5c50> successfully created
+INFO:app:new db <SQLAlchemy engine=None> successfully created within <Flask 'app'> context
+INFO:app:/home/ivbor/Data/Business/flask_site/var/app-instance
+INFO:app:tables inside db created
+INFO:root:new app <Flask 'app'> successfully initialized
+INFO:app:new login <flask_login.login_manager.LoginManager object at 0x7f73761a5c50> successfully created
+INFO:app:new db <SQLAlchemy engine=None> successfully created within <Flask 'app'> context
+INFO:app:/home/ivbor/Data/Business/flask_site/var/app-instance
+INFO:app:tables inside db created
+INFO:root:new app <Flask 'app'> successfully initialized
+INFO:app:new login <flask_login.login_manager.LoginManager object at 0x7f73761bef90> successfully created
+INFO:app:new db <SQLAlchemy engine=None> successfully created within <Flask 'app'> context
+INFO:app:/home/ivbor/Data/Business/flask_site/var/app-instance
+INFO:app:tables inside db created
+INFO:root:new app <Flask 'app'> successfully initialized
+INFO:app:new login <flask_login.login_manager.LoginManager object at 0x7f02cbebd650> successfully created
+INFO:app:new db <SQLAlchemy engine=None> successfully created within <Flask 'app'> context
+INFO:app:/home/ivbor/Data/Business/baravaja_fabric_crafts/var/app-instance
+INFO:app:tables inside db created

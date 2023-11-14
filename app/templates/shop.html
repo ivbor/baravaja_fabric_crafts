@@ -1,0 +1,70 @@
+<!-- templates/shop.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Baravaja Fabric Crafts</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <header>
+        <!-- ... navigation content ... -->
+    </header>
+
+    <main>
+        <div class="shop-container">
+            <h2>Shop</h2>
+
+            <!-- Cards per Page and Filters -->
+            <div class="options">
+                <label for="cards-per-page">Cards per Page:</label>
+                <select id="cards-per-page">
+                    <option value="12">12</option>
+                    <option value="24">24</option>
+                    <option value="36">36</option>
+                </select>
+
+                <!-- Add filters for Goods database here -->
+
+                <!-- Add other filters as needed -->
+            </div>
+
+            <!-- Page Number Switchers -->
+            <div class="page-switchers">
+                <!-- Display page numbers dynamically based on the number of pages -->
+                <span class="active">1</span>
+                <!-- Add more page numbers as needed -->
+            </div>
+
+            <!-- Product Cards -->
+            <div class="product-cards">
+                <!-- Loop through products and display cards dynamically -->
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/goods/product1.jpg') }}" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>Price: $19.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+
+            <!-- Page Number Switchers -->
+            <div class="page-switchers">
+                <!-- Display page numbers dynamically based on the number of pages -->
+                <span class="active">1</span>
+                <!-- Add more page numbers as needed -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- ... footer content ... -->
+    </footer>
+</body>
+
+</html>
+ 

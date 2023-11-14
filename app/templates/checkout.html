@@ -1,0 +1,66 @@
+<!-- templates/checkout.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Baravaja Fabric Crafts</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <header>
+        <!-- ... navigation content ... -->
+    </header>
+
+    <main>
+        <div class="checkout-container">
+            <!-- User Order -->
+            <div class="order">
+                <h2>Your Order</h2>
+                {% if cart_items %}
+                    <!-- Loop through cart items dynamically -->
+                    {% for item in cart_items %}
+                        <div class="order-item">
+                            <p>{{ item.name }} - Quantity: 1 - ${{ item.price }}</p>
+                        </div>
+                    {% endfor %}
+                    <p>To be paid: ${{ total }}</p>
+                {% else %}
+                    <!-- Display a message when the cart is empty -->
+                    <p>Nothing is in the cart.</p>
+                {% endif %}
+            </div>
+
+            <!-- Shipping Information -->
+            {% if not user_logged_in %}
+                <div class="shipping-info">
+                    <h2>Shipping Information</h2>
+                    <form action="{{ url_for('checkout') }}" method="post">
+                        <!-- Add prompts for first name, last name, region, city, street name, street number, apartment, post index, and phone number here -->
+                        <button type="submit">Proceed to Payment</button>
+                    </form>
+                    <p>At this point, we ship our products only across Poland.</p>
+                    <p>Order and payment confirmations will be sent to the email you logged in with.</p>
+                </div>
+            {% endif %}
+
+            <!-- Log In or Register (if not logged in) -->
+            {% if not user_logged_in %}
+                <div class="login-register">
+                    <h2>Log In or Register</h2>
+                    <p>If you have an account, please <a href="{{ url_for('login') }}">log in</a>. If not, you can <a href="{{ url_for('register') }}">register</a>.</p>
+                </div>
+            {% endif %}
+        </div>
+    </main>
+
+    <footer>
+        <!-- ... footer content ... -->
+    </footer>
+</body>
+
+</html>
+ 

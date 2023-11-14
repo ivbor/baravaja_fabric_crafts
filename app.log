@@ -1,0 +1,45 @@
+INFO:root:new app <Flask 'app'> successfully initialized
+INFO:app:new login <flask_login.login_manager.LoginManager object at 0x7fe838e87e50> successfully created
+INFO:app:new db <SQLAlchemy engine=None> successfully created within <Flask 'app'> context
+INFO:app:/home/ivbor/Data/Business/baravaja_fabric_crafts/var/app-instance
+INFO:app:tables inside db created
+INFO:root:new app <Flask 'app'> successfully initialized
+INFO:app:new login <flask_login.login_manager.LoginManager object at 0x7f299faf6610> successfully created
+INFO:app:new db <SQLAlchemy engine=None> successfully created within <Flask 'app'> context
+INFO:app:/home/ivbor/Data/Business/baravaja_fabric_crafts/var/app-instance
+INFO:app:tables inside db created
+INFO:root:new app <Flask 'app'> successfully initialized
+INFO:app:new login <flask_login.login_manager.LoginManager object at 0x7fd31a16a450> successfully created
+INFO:app:new db <SQLAlchemy engine=None> successfully created within <Flask 'app'> context
+INFO:app:/home/ivbor/Data/Business/baravaja_fabric_crafts/var/app-instance
+INFO:app:tables inside db created
+INFO:root:new app <Flask 'app'> successfully initialized
+INFO:app:new login <flask_login.login_manager.LoginManager object at 0x7fb22098b750> successfully created
+INFO:app:new db <SQLAlchemy engine=None> successfully created within <Flask 'app'> context
+INFO:app:/home/ivbor/Data/Business/baravaja_fabric_crafts/var/app-instance
+INFO:app:tables inside db created
+INFO:root:new app <Flask 'app'> successfully initialized
+INFO:app:new login <flask_login.login_manager.LoginManager object at 0x7fee192f6610> successfully created
+INFO:app:new db <SQLAlchemy engine=None> successfully created within <Flask 'app'> context
+INFO:app:/home/ivbor/Data/Business/baravaja_fabric_crafts/var/app-instance
+INFO:app:tables inside db created
+INFO:root:new app <Flask 'app'> successfully initialized
+INFO:app:new login <flask_login.login_manager.LoginManager object at 0x7f7a0107f790> successfully created
+INFO:app:new db <SQLAlchemy engine=None> successfully created within <Flask 'app'> context
+INFO:app:/home/ivbor/Data/Business/baravaja_fabric_crafts/var/app-instance
+INFO:app:tables inside db created
+INFO:root:new app <Flask 'app'> successfully initialized
+INFO:app:new login <flask_login.login_manager.LoginManager object at 0x7f243c556610> successfully created
+INFO:app:new db <SQLAlchemy engine=None> successfully created within <Flask 'app'> context
+INFO:app:/home/ivbor/Data/Business/baravaja_fabric_crafts/var/app-instance
+INFO:app:tables inside db created
+INFO:root:new app <Flask 'app'> successfully initialized
+INFO:app:new login <flask_login.login_manager.LoginManager object at 0x7f1151f83a50> successfully created
+INFO:app:new db <SQLAlchemy engine=None> successfully created within <Flask 'app'> context
+INFO:app:/home/ivbor/Data/Business/baravaja_fabric_crafts/var/app-instance
+INFO:app:tables inside db created
+INFO:root:new app <Flask 'app'> successfully initialized
+INFO:app:new login <flask_login.login_manager.LoginManager object at 0x7f15c5cf5550> successfully created
+INFO:app:new db <SQLAlchemy engine=None> successfully created within <Flask 'app'> context
+INFO:app:/home/ivbor/Data/Business/baravaja_fabric_crafts/var/app-instance
+INFO:app:tables inside db created

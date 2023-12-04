@@ -11,7 +11,6 @@
  flask_sqlalchemy==2.5.1
  Flask-Testing
  psycopg2-binary 
- Flask-SQLAlchemy
  flask_login
  Flask-Migrate
  wheel

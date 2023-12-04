@@ -1,62 +1,145 @@
 <!-- templates/admin.html -->
+{% extends 'base.html' %}
+{% block title %}
+Admin Interface - Baravaja Fabric Crafts
+{% endblock %}
+{% block content %}
+<div class="admin-container">
+ <h2>Admin Interface</h2>
 
-<!DOCTYPE html>
-<html lang="en">
+ <!-- Database Tables -->
+ <div class="database-tables">
+  <!-- Users Table -->
+  <div class="database-table">
+   <h3>Users Table <a href="{{ url_for('add', obj='user') }}">Add</a> </h3>
+    <table>
+     <tr>
+       <th>User ID</th>
+       <th>First Name</th>
+       <th>Last Name</th>
+       <th>Street Name</th>
+       <th>Street Number</th>
+       <th>Apt. Number</th>
+       <th>City</th>
+       <th>Region</th>
+       <th>Post Index</th>
+       <th>Phone Number</th>
+       <th>Email</th>
+       <th>Recommendation Id's</th>
+       <th>Orders Id's</th>
+       <!-- Edit, Delete buttons -->
+       <th>Edit</th>
+       <th>Delete</th>
+     </tr>
+     {% for user in users %}
+     <tr>
+       <td>{{ user.id }}</td>
+       <td>{{ user.first_name }}</td>
+       <td>{{ user.last_name }}</td>
+       <td>{{ user.street_name }}</td>
+       <td>{{ user.street_number }}</td>
+       <td>{{ user.apt_number }}</td>
+       <td>{{ user.city }}</td>
+       <td>{{ user.region }}</td>
+       <td>{{ user.post_index }}</td>
+       <td>{{ user.phone_num }}</td>
+       <td>{{ user.email }}</td>
+       <td>{{ user.rec_id }}</td>
+       <td>{{ user.orders_ids }}</td>
+       <!-- Edit, Delete buttons -->
+       <td>
+         <a href="{{ url_for('edit', obj='user', obj_id=user.id) }}">
+           Edit
+         </a>
+       </td>
+       <td>
+         <a href="{{ url_for('delete', obj='user', obj_id=user.id) }}">
+           Delete
+         </a>
+       </td>
+     </tr>
+     {% endfor %}
+    </table>
+  </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Interface - Baravaja Fabric Crafts</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-</head>
+  <!-- Orders Table -->
+  <div class="database-table">
+   <h3>Orders Table <a href="{{ url_for('add', obj='order') }}">Add</a> </h3>
+    <table>
+     <tr>
+       <th>Order ID</th>
+       <th>User ID</th>
+       <th>Sum</th>
+       <th>Datetime</th>
+       <th>Edit</th>
+       <th>Delete</th>
+     </tr>
+     {% for order in orders %}
+     <tr>
+       <td>{{ order.id }}</td>
+       <td>{{ order.user_id }}</td>
+       <td>{{ order.summ }}</td>
+       <td>{{ order.datetime }}</td>
+       <td>
+         <a href="{{ url_for('edit', obj='order', obj_id=order.id) }}">
+           Edit
+         </a>
+       </td>
+       <td>
+         <a href="{{ url_for('delete', obj='order', obj_id=order.id) }}">
+           Delete
+         </a>
+       </td>
+     </tr>
+     {% endfor %}
+    </table>
+  </div>
 
-<body>
-    <header>
-        <!-- ... navigation content ... -->
-    </header>
+  <!-- Goods Table -->
+  <div class="database-table">
+   <h3>Goods Table <a href="{{ url_for('add', obj='good') }}">Add</a> </h3>
+    <table>
+     <tr>
+       <th>Good ID</th>
+       <th>Name</th>
+       <th>Photos</th>
+       <th>Price</th>
+       <th>Description</th>
+       <th>Edit</th>
+       <th>Delete</th>
+     </tr>
+     {% for good in goods %}
+     <tr>
+       <td>{{ good.id }}</td>
+       <td>{{ good.name }}</td>
+       <td>{{ good.photos }}</td>
+       <td>{{ good.price }}</td>
+       <td>{{ good.description }}</td>
+       <td>
+         <a href="{{ url_for('edit', obj='good', obj_id=good.id) }}">
+           Edit
+         </a>
+       </td>
+       <td>
+         <a href="{{ url_for('delete', obj='good', obj_id=good.id) }}">
+           Delete
+         </a>
+       </td>
+     </tr>
+     {% endfor %}
+    </table>
+  </div>
+ </div>
 
-    <main>
-        <div class="admin-container">
-            <h2>Admin Interface</h2>
-
-            <!-- Database Tables -->
-            <div class="database-tables">
-                <!-- Users Table -->
-                <div class="database-table">
-                    <h3>Users Table</h3>
-                    <!-- Display users' information and CRUD options dynamically -->
-                    <!-- Example: User ID, First Name, Last Name, Email, ... Edit, Delete buttons -->
-                </div>
-
-                <!-- Orders Table -->
-                <div class="database-table">
-                    <h3>Orders Table</h3>
-                    <!-- Display orders' information and CRUD options dynamically -->
-                    <!-- Example: Order ID, User ID, Summ, Datetime, Goods List, ... Edit, Delete buttons -->
-                </div>
-
-                <!-- Goods Table -->
-                <div class="database-table">
-                    <h3>Goods Table</h3>
-                    <!-- Display goods' information and CRUD options dynamically -->
-                    <!-- Example: Good ID, Name, Photos, Price, Description, ... Edit, Delete buttons -->
-                </div>
-            </div>
-
-            <!-- Synchronization Options -->
-            <div class="sync-options">
-                <h3>Synchronization Options</h3>
-                <button>Sync Users</button>
-                <button>Sync Orders</button>
-                <button>Sync Goods</button>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <!-- ... footer content ... -->
-    </footer>
-</body>
-
-</html>
+ <!-- Synchronization Options -->
+ <div class="sync-options">
+   <a href="{{ url_for('sync_to_file') }}">
+     <button>Sync To File</button>
+   </a>
+   <a href="{{ url_for('sync_from_file') }}">
+     <button>Sync From File</button>
+   </a>
+ </div>
+</div>
+{% endblock %}
  

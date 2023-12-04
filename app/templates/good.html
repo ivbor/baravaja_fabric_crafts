@@ -1,50 +1,32 @@
 <!-- templates/good.html -->
+{% extends base.html %}
+{% block title %}
+{{ good.name }} - Baravaja Fabric Crafts
+{% endblock %}
+{% block content %}
+ <div class="good-container">
+  <!-- Product Images -->
+  <div class="product-images">
+   <!-- Loop through product images dynamically -->
+   <img 
+    src="{{ url_for('static', filename='images/goods/product1.jpg') }}" 
+    alt="Product 1">
+   <!-- Add more images as needed -->
+  </div>
 
-<!DOCTYPE html>
-<html lang="en">
+  <!-- Product Details -->
+  <div class="product-details">
+   <!-- Product Name -->
+   <h2>{{ good.name }}</h2>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ good.name }} - Baravaja Fabric Crafts</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-</head>
+   <!-- Product Price -->
+   <p>Price: ${{ good.price }}</p>
 
-<body>
-    <header>
-        <!-- ... navigation content ... -->
-    </header>
+   <!-- Product Description -->
+   <p>{{ good.description }}</p>
 
-    <main>
-        <div class="good-container">
-            <!-- Product Images -->
-            <div class="product-images">
-                <!-- Loop through product images dynamically -->
-                <img src="{{ url_for('static', filename='images/goods/product1.jpg') }}" alt="Product 1">
-                <!-- Add more images as needed -->
-            </div>
-
-            <!-- Product Details -->
-            <div class="product-details">
-                <!-- Product Name -->
-                <h2>{{ good.name }}</h2>
-
-                <!-- Product Price -->
-                <p>Price: ${{ good.price }}</p>
-
-                <!-- Product Description -->
-                <p>{{ good.description }}</p>
-
-                <!-- Add to Cart Button -->
-                <button>Add to Cart</button>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <!-- ... footer content ... -->
-    </footer>
-</body>
-
-</html>
- 
+   <!-- Add to Cart Button -->
+   <button>Add to Cart</button>
+  </div>
+ </div>
+{% endblock %}

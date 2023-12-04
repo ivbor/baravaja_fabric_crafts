@@ -1,47 +1,40 @@
 <!-- templates/login.html -->
+{% extends 'base.html' %}
+{% block title %}
+Login - Baravaja Fabric Crafts
+{% endblock %}
+{% block content %}
+ <div class="login-container">
+  <form action="{{ url_for('login') }}" method="post" 
+    id="{{ form.id }}">
+   
+   {{ form.hidden_tag() }}  
+   
+   <!-- Email Field -->
+   <label class="login-container">{{ form.username.label }}</label>
+   {{ form.username(
+      class="input-container", autocomplete="on", required=True) }}
 
-<!DOCTYPE html>
-<html lang="en">
+   <!-- Password Field -->
+   <label class="login-container">{{ form.password.label }}</label>
+   {{ form.password(
+      class="input-container", autocomplete="on", required=True) }}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Baravaja Fabric Crafts</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-</head>
+   <div id="login-message" style="display: none;">
+     Login failed. Please try again.
+   </div> 
 
-<body>
-    <header>
-        <!-- ... navigation content ... -->
-    </header>
+   <!-- Log In Button -->
+   {{ form.submit(class="login-button") }}
+  </form>
 
-    <main>
-        <div class="login-container">
-            <h2>Login</h2>
-            <form action="{{ url_for('login') }}" method="post">
-                <!-- Email Field -->
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+  <!-- Forgot Password -->
+  <p><a href="{{ url_for('restore') }}">Forgot a password?</a></p>
 
-                <!-- Password Field -->
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-
-                <!-- Log In Button -->
-                <button type="submit">Log In</button>
-            </form>
-
-            <!-- Forgot Password -->
-            <p><a href="{{ url_for('restore') }}">Forgot a password?</a></p>
-
-            <!-- Register -->
-            <p>Don't have an account? <a href="{{ url_for('register') }}">Register</a></p>
-        </div>
-    </main>
-
-    <footer>
-        <!-- ... footer content ... -->
-    </footer>
-</body>
-
-</html>
+  <!-- Register -->
+  <p>Don't have an account? 
+   <a href="{{ url_for('register') }}">Register</a>
+  </p>
+ </div>
+<script src="{{ url_for('get_script', filename='login.js') }}"></script>
+{% endblock %}

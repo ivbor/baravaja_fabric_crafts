@@ -1,9 +1,15 @@
+ selenium
+ bandit
+ coverage
+ requests
+ geopy
+ Flask-WTF
  markupsafe
  werkzeug~=2.0.0
  flask
  sqlalchemy<2.0
  flask_sqlalchemy==2.5.1
- flask_session
+ Flask-Testing
  psycopg2-binary 
  Flask-SQLAlchemy
  flask_login

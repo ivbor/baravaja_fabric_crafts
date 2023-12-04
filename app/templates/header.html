@@ -1,0 +1,65 @@
+<header>
+ <!-- Navigation Bar -->
+ <nav>
+  <div class="nav-options">
+   <div class="language-currency">
+    <!-- Language button -->
+    <button onclick="changeLanguage('pl')" class="flag-button">
+     <img src="{{ url_for('static',
+      filename='images/flags/poland-flag.png') }}"
+      alt="Polish Flag">
+    </button>
+    <!-- Language button -->
+    <button onclick="changeLanguage('en')" class="flag-button">
+     <img src="{{ url_for('static',
+      filename='images/flags/uk-flag.png') }}"
+      alt="English Flag"> 
+    </button>
+    <!-- Language button -->
+    <button onclick="changeLanguage('ru')" class="flag-button">
+     <img src="{{ url_for('static',
+      filename='images/flags/russia-flag.png') }}"
+      alt="Russian Flag"> 
+    </button>
+
+    <!-- Currency selection -->
+    <select id="options" onchange="handleSelectionChange()">
+     <option value="zl">ZŁ</option>
+     <option value="eur">EUR</option>
+     <option value="rub">RUB</option>
+    </select>
+   </div>
+  </div>
+  <div class="nav-logo">
+   <a href="{{ url_for('home') }}">
+    <img src="{{ url_for('static', filename='images/logo/logo.png') }}" 
+     alt="Baravaja Logo">
+   </a>
+  </div>
+  <div class="nav-menu">
+   <ul>
+    <li>
+      <a href="{{ url_for('home') }}">Home</a>
+    </li>
+    <li>
+     {% if request.cookies.get('logged_in') %}
+        {% if (request.cookies['logged_in'] == 'true') %}
+            <a href="javascript:void(0);" onclick="logout()">Log out</a>
+        {% else %}
+            <a href="{{ url_for('login') }}">Log in</a>
+        {% endif %}
+    {% else %}
+        <a href="{{ url_for('login') }}">Log in</a>
+    {% endif %}
+    </li>
+    <li>
+      <a href="{{ url_for('shop') }}">Shop</a>
+    </li>
+    <li>
+      <a href="{{ url_for('cart') }}">Cart</a>
+    </li>
+   </ul>
+  </div>
+ </nav>
+</header>
+<script src="{{ url_for('get_script', filename='header.js') }}"></script>

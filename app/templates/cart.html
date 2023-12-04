@@ -1,65 +1,49 @@
 <!-- templates/cart.html -->
+{% extends 'base.html' %}
+{% block title %}
+Your Cart - Baravaja Fabric Crafts
+{% endblock %}
+{% block content %}
+ <div class="cart-container">
+  <!-- Cart Title -->
+  <h2>Your Cart</h2>
 
-<!DOCTYPE html>
-<html lang="en">
+  <!-- Cart Items -->
+  <div class="cart-items">
+   {% if cart_items %}
+   <!-- Loop through cart items dynamically -->
+    {% for item in cart_items %}
+     <div class="cart-item">
+      <img 
+       src="{{ url_for('static', filename='images/goods/' + item.photo) }}" 
+       alt="{{ item.name }}">
+      <h3>{{ item.name }}</h3>
+      <p>Price: ${{ item.price }}</p>
+      <!-- Options to add more, remove some, or remove all items -->
+      <button>Add More</button>
+      <button>Remove Some</button>
+      <button>Remove All</button>
+     </div>
+    {% endfor %}
+   {% else %}
+    <!-- Display a message when the cart is empty -->
+    <p>Nothing is in the cart.</p>
+   {% endif %}
+  </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Cart - Baravaja Fabric Crafts</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-</head>
-
-<body>
-    <header>
-        <!-- ... navigation content ... -->
-    </header>
-
-    <main>
-        <div class="cart-container">
-            <!-- Cart Title -->
-            <h2>Your Cart</h2>
-
-            <!-- Cart Items -->
-            <div class="cart-items">
-                {% if cart_items %}
-                    <!-- Loop through cart items dynamically -->
-                    {% for item in cart_items %}
-                        <div class="cart-item">
-                            <img src="{{ url_for('static', filename='images/goods/' + item.photo) }}" alt="{{ item.name }}">
-                            <h3>{{ item.name }}</h3>
-                            <p>Price: ${{ item.price }}</p>
-                            <!-- Options to add more, remove some, or remove all items -->
-                            <button>Add More</button>
-                            <button>Remove Some</button>
-                            <button>Remove All</button>
-                        </div>
-                    {% endfor %}
-                {% else %}
-                    <!-- Display a message when the cart is empty -->
-                    <p>Nothing is in the cart.</p>
-                {% endif %}
-            </div>
-
-            <!-- Order Summary -->
-            <div class="order-summary">
-                {% if cart_items %}
-                    <!-- Loop through cart items dynamically to calculate total -->
-                    {% set total = 0 %}
-                    {% for item in cart_items %}
-                        {% set total = total + item.price %}
-                    {% endfor %}
-                    <p>Total: ${{ total }}</p>
-                    <button><a href="{{ url_for('checkout') }}">To Checkout</a></button>
-                {% endif %}
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <!-- ... footer content ... -->
-    </footer>
-</body>
-
-</html>
- 
+  <!-- Order Summary -->
+  <div class="order-summary">
+   {% if cart_items %}
+    <!-- Loop through cart items dynamically to calculate total -->
+    {% set total = 0 %}
+    {% for item in cart_items %}
+     {% set total = total + item.price %}
+    {% endfor %}
+    <p>Total: ${{ total }}</p>
+    <button>
+      <a href="{{ url_for('checkout') }}">To Checkout</a>
+    </button>
+   {% endif %}
+  </div>
+ </div>
+{% endblock %}

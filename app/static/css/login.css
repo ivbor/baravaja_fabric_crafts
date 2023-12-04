@@ -1,0 +1,35 @@
+.login-container {
+  text-align: center;
+  padding: 50px;
+  background-color: #F9F9F9; 
+}
+
+.login-container h2 {
+  color: #333; 
+}
+
+.login-container label {
+  display: block;
+  color: #333;
+}
+
+.input-container {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.login-button {
+  background-color: #DC86DA; 
+  color: #FFF;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.login-button:hover {
+  background-color: #B96CAB; 
+}
+ 

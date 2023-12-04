@@ -1,0 +1,39 @@
+footer { /* #DC86DA - rose */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #C6B6AC; 
+  z-index: 1000;
+  justify-content: space-between;
+}
+
+.footer-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media {
+  display: flex;
+}
+
+.social-icon {
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  padding: 0;
+  border: none; 
+}
+
+.social-icon img {
+  width: 30px; /* Set the desired width for the icons */
+  height: 30px; /* Set the desired height for the icons */
+  border-radius: 5px;
+}
+
+.copyright {
+  margin: 0; /* Remove default margin for better alignment */
+}

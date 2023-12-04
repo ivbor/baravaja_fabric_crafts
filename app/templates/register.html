@@ -1,49 +1,46 @@
-<!-- templates/register.html -->
+{% extends 'base.html' %}
+{% block title %}
+Register - Baravaja Fabric Crafts
+{% endblock %}
+{% block content %}
+ <div class="login-container">
+  <form action="{{ url_for('register') }}" method="post"
+    id="{{ form.id }}">
+  
+   {{ form.hidden_tag() }}
 
-<!DOCTYPE html>
-<html lang="en">
+   <!-- Email Field -->
+   <label class="login-container">{{ form.username.label }}</label>
+   {{ form.username(
+      class="input-container", autocomplete="on", required=True) }}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - Baravaja Fabric Crafts</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-</head>
+   <!-- Password Field -->
+   <label class="login-container">{{ form.password.label }}</label>
+   {{ form.password(
+      class="input-container", autocomplete="on", required=True) }}
 
-<body>
-    <header>
-        <!-- ... navigation content ... -->
-    </header>
+   <!-- Repeat Password Field -->
+   <label class="login-container">{{ form.repeat_password.label }}</label>
+   {{ form.repeat_password(
+      class="input-container", required=True) }}
 
-    <main>
-        <div class="register-container">
-            <h2>Register</h2>
-            <form action="{{ url_for('register') }}" method="post">
-                <!-- Email Field -->
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+   <div id="wrong-password-message" style="display: none; color: red;">
+     Passwords don't match. Please try again.
+   </div> 
 
-                <!-- Password Field -->
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
+   <div id="wrong-email-message" style="display: none; color: red;">
+     Email is already in use.
+   </div> 
+   
+   <!-- Log In Button -->
+   {{ form.submit(class="login-button") }}
+  </form>
 
-                <!-- Repeat Password Field -->
-                <label for="repeat-password">Repeat Password:</label>
-                <input type="password" id="repeat-password" name="repeat-password" required>
-
-                <!-- Register Button -->
-                <button type="submit">Register</button>
-            </form>
-
-            <!-- Link to Login Page -->
-            <p>Already have an account? <a href="{{ url_for('login') }}">Login</a></p>
-        </div>
-    </main>
-
-    <footer>
-        <!-- ... footer content ... -->
-    </footer>
-</body>
-
-</html>
- 
+  <!-- Link to Login Page -->
+  <p>
+   Already have an account? 
+   <a href="{{ url_for('login') }}">Login</a>
+  </p>
+ </div>
+<script src="{{ url_for('get_script', filename='register.js') }}"></script>
+{% endblock %}

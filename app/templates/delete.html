@@ -1,0 +1,16 @@
+<!-- templates/delete_user.html -->
+{% extends 'base.html' %}
+{% block title %}
+Delete Entry - Baravaja Fabric Crafts
+{% endblock %}
+{% block content %}
+  <h2>Delete Entry</h2>
+  <p>
+  Are you sure you want to delete the entry {{ obj }} with ID {{ obj_id }}?
+  </p>
+  <form method="POST">
+    {{ form.hidden_tag() }}
+    <button type="submit" class="btn btn-danger">Yes, delete</button>
+    <a href="{{ url_for('admin') }}" class="btn btn-secondary">Cancel</a>
+  </form>
+{% endblock %}

@@ -1,58 +1,52 @@
 <!-- templates/account.html -->
+{% extends base.html %}
+{% block title %}
+Welcome to Your Account - Baravaja Fabric Crafts
+{% endblock %}
+{% block content %}
+<div class="account-container">
+ <!-- Welcome Message -->
+ <h2>Welcome to Your Account!</h2>
 
-<!DOCTYPE html>
-<html lang="en">
+ <!-- Account Menu -->
+ <div class="account-menu">
+  <ul>
+   <li>
+    <a href="{{ url_for('account_info', user_id=user.id) }}">
+      Information
+    </a>
+   </li>
+   <li>
+    <a href="{{ url_for('account_orders', user_id=user.id) }}">
+      Orders
+    </a>
+   </li>
+  </ul>
+ </div>
+ <!-- Information Block -->
+ <div class="information-block">
+  <h3>Information</h3>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Your Account - Baravaja Fabric Crafts</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-</head>
+  <!-- Email -->
+  <div class="info-item">
+   <span>Email:</span>
+   <p>{{ user.email }}</p>
+   <button>Edit</button>
+  </div>
 
-<body>
-    <header>
-        <!-- ... navigation content ... -->
-    </header>
-
-    <main>
-        <div class="account-container">
-            <!-- Welcome Message -->
-            <h2>Welcome to Your Account!</h2>
-
-            <!-- Account Menu -->
-            <div class="account-menu">
-                <ul>
-                    <li><a href="{{ url_for('account_info', user_id=user.id) }}">Information</a></li>
-                    <li><a href="{{ url_for('account_orders', user_id=user.id) }}">Orders</a></li>
-                </ul>
-            </div>
-
-            <!-- Information Block -->
-            <div class="information-block">
-                <h3>Information</h3>
-
-                <!-- Email -->
-                <div class="info-item">
-                    <span>Email:</span>
-                    <p>{{ user.email }}</p>
-                    <button>Edit</button>
-                </div>
-
-                <!-- User Post Address -->
-                <div class="info-item">
-                    <span>User Post Address:</span>
-                    <p>{{ user.region }}, {{ user.city }}, {{ user.street_name }} {{ user.street_number }}, Apt {{ user.apartment_number }}, {{ user.post_index }}</p>
-                    <button>Edit</button>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <!-- ... footer content ... -->
-    </footer>
-</body>
-
-</html>
- 
+  <!-- User Post Address -->
+  <div class="info-item">
+   <span>User Post Address:</span>
+   <p>
+    {{ user.region }}, 
+    {{ user.city }}, 
+    {{ user.street_name }} 
+    {{ user.street_number }}, 
+    Apt {{ user.apartment_number }}, 
+    {{ user.post_index }}
+   </p>
+   <button>Edit</button>
+  </div>
+ </div>
+</div>
+{% endblock %}

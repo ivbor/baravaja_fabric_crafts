@@ -1,0 +1,32 @@
+/* static/styles.css */
+
+@import url('header.css');
+@import url('footer.css');
+@import url('slideshow.css');
+@import url('login.css');
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff; 
+    /* Light background color */
+    color: #333; 
+    /* Dark text color */
+}
+
+main {
+    padding-top: 110px;
+    /* Ensure content doesn't get hidden behind the fixed header */
+}

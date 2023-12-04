@@ -1,0 +1,8 @@
+12:10:50 INFO new app <Flask 'app'> successfully initialized
+12:10:50 INFO new config <Config {'ENV': 'production', 'DEBUG': True, 'TESTING': False, 'PROPAGATE_EXCEPTIONS': None, 'PRESERVE_CONTEXT_ON_EXCEPTION': None, 'SECRET_KEY': '008f2392ce35180cf0a30c68d057bfbe', 'PERMANENT_SESSION_LIFETIME': datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None, 'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session', 'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None, 'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False, 'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True, 'MAX_CONTENT_LENGTH': None, 'SEND_FILE_MAX_AGE_DEFAULT': None, 'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False, 'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http', 'JSON_AS_ASCII': True, 'JSON_SORT_KEYS': True, 'JSONIFY_PRETTYPRINT_REGULAR': False, 'JSONIFY_MIMETYPE': 'application/json', 'TEMPLATES_AUTO_RELOAD': None, 'MAX_COOKIE_SIZE': 4093, 'LANGUAGES': ['en', 'pl', 'ru'], 'SESSION_TYPE': 'filesystem', 'SQLALCHEMY_DATABASE_URI': 'postgresql://postgres@localhost/postgres', 'WTF_CSRF_SECRET_KEY': '217356920482100b4462e1bfadcd2368'}> successfully adopted
+12:10:50 INFO new db <SQLAlchemy engine=None> successfully created within <Flask 'app'> context
+12:10:50 INFO tables inside db created
+12:10:50 INFO CSRF protection working
+12:10:50 INFO current path is /home/ivbor/Data/Business/baravaja_fabric_crafts/var/app-instance
+12:10:50 INFO current admin is <User 1>
+12:10:51 INFO new login <flask_login.login_manager.LoginManager object at 0x7f16ec78d4d0> successfully created

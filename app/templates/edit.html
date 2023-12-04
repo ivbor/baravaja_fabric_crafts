@@ -1,0 +1,23 @@
+<!-- templates/edit.html -->
+{% extends 'base.html' %}
+{% block title %}
+Edit Entry - Baravaja Fabric Crafts
+{% endblock %}
+{% block content %}
+ {% if add %}
+  <form method="POST" 
+    action="{{ url_for('add', obj=obj) }}">
+  {% else %}
+  <form method="POST" 
+    action="{{ url_for('edit', obj=obj, obj_id=form.id.data) }}">
+  {% endif %}
+      {{ form.hidden_tag() }}
+      {% for field in form %}
+          <div>
+              {{ field.label }}
+              {{ field(size=20) }}
+          </div>
+      {% endfor %}
+      <button type="submit">Submit</button>
+  </form>
+{% endblock %}

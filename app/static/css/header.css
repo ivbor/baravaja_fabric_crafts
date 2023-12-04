@@ -1,0 +1,67 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C6B6AC;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; 
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.nav-logo {
+    order: 1;
+    padding: 0 20px;
+}
+
+.nav-logo img {
+    width: 100px; 
+}
+
+.nav-options {
+    order: 3;
+    margin-left: auto;
+}
+
+.nav-menu {
+    order: 2;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin-right: 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.flag-button {
+  border: none;
+  padding: 0;       /* Remove button padding */
+  background: none; /* Remove default button background */
+}
+
+.flag-button img {
+  width: 100%;      /* Make the flag image cover the entire button */
+  height: 100%;
+  border-radius: 5px;
+}

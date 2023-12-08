@@ -23,7 +23,6 @@ app.logger.info(f'new login {login_manager} successfully created')
 
 @login_manager.user_loader
 def load_user(user_id):
-    app.logger.info(f'user {user_id} is being loaded')
     return User.query.get_or_404(user_id)
 
 
@@ -176,8 +175,25 @@ def register():
 @app.route('/shop')
 def shop():
     app.logger.info('loading /shop')
-    goods = Good.query.all()
-    return render_with_cookies('shop.html')
+
+    page = int(request.args.get('page', 1))
+
+    items_per_page = int(request.args.get('items_per_page', 12))
+
+    sort_order = request.args.get('sort_order', 'asc')
+    sort_key = request.args.get('sort_key', 'name')
+
+    if sort_order == 'asc':
+        goods = Good.query.order_by(
+            getattr(Good, sort_key)).paginate(
+                page, items_per_page, False)
+    else:
+        goods = Good.query.order_by(
+            getattr(Good, sort_key).desc()).paginate(
+                page, items_per_page, False)
+
+    return render_with_cookies('shop.html', products=goods.items,
+                               pagination=goods)
 
 
 @app.route('/<language>/')

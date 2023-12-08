@@ -171,7 +171,7 @@ def sync_to_file():
                         '-U', app.config['SQLALCHEMY_DATABASE_URI']
                         .split('@')[0].split('/')[-1],
                         '-d', app.config['SQLALCHEMY_DATABASE_URI']
-                        .split('@')[0].split('/')[-1],
+                        .split('/')[-1],
                         '-f', os.getcwd() + '/backup.dump'])
     except Exception as e:
         app.logger.info(f'Error synchronizing: {str(e)}')
@@ -183,26 +183,28 @@ def sync_to_file():
 @admin_required
 def sync_from_file():
 
-    from sqlalchemy import create_engine
+    try:
+        db.db.session.remove()
+        db_user = app.config['SQLALCHEMY_DATABASE_URI'].split(
+            '@')[0].split('/')[-1]
+        db_name = app.config['SQLALCHEMY_DATABASE_URI'].split('/')[-1]
 
-    db.db.session.remove()
-    del db.db
-    db_name = app.config['SQLALCHEMY_DATABASE_URI'].split(
-        '@')[0].split('/')[-1]
-    db_user = app.config['SQLALCHEMY_DATABASE_URI'].split('/')[-1]
-    engine = create_engine(
-        app.config['SQLALCHEMY_DATABASE_URI'][:-len(db_name)])
-    # check if app still has an active connection to the database
-    app.logger.info(f'engine: {engine}')
-    conn = engine.connect()
-    conn.execute(f'DROP DATABASE IF EXISTS {db_name};')
-    conn.close()
-    engine.dispose()
+        subprocess.run(['psql', f'--username={db_user}', '-c',
+                        'SELECT pg_terminate_backend(pid) ' +
+                        f'FROM pg_stat_activity WHERE datname=\'{db_name}\';'])
+        subprocess.run(['psql', f'--username={db_user}', '-d', db_user,
+                        '-c', f'drop database {db_name};'])
+        subprocess.run(['psql', f'--username={db_user}',
+                        '-c', f'create database {db_name};'])
+        subprocess.run(['psql', '-h', 'localhost', '-U', db_user,
+                       '-d', db_name, '-f', './backup.dump'])
 
-    subprocess.run(['psql', '-U', db_user, '-d', db_name,
-                    '-f', os.getcwd() + '/backup.dump'])
-
-    db.db.init_app(app)
-    db.db.create_all()
+        db.db.init_app(app)
+        db.db.create_all()
+    except AssertionError:
+        # so that the server would reload everything automatically
+        # without causing 500 error on the server due to reconnecting
+        # to the database
+        pass
 
     return redirect(url_for('admin'))

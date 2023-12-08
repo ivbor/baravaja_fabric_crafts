@@ -163,6 +163,55 @@ ALTER TABLE ONLY public."user" ALTER COLUMN id SET DEFAULT nextval('public.user_
 
 
 --
+-- Data for Name: good; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.good (id, name, price, description, photos) FROM stdin;
+1	good_1	20	Bag 1	good_1_1.jpg good_1_2.jpg good_1_3.jpg good_1_4.jpg
+2	good_2	20	Bag 2	good_2_1.jpg good_2_2.jpg
+3	good_4	20	Bag 4	good_4_1.jpg
+\.
+
+
+--
+-- Data for Name: order; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public."order" (id, user_id, summ, contents, datetime) FROM stdin;
+\.
+
+
+--
+-- Data for Name: user; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public."user" (id, first_name, last_name, street_name, street_number, apt_number, city, region, post_index, phone_num, email, hashed_password, rec_id, orders_ids, is_admin) FROM stdin;
+1	\N	\N	\N	\N	\N	\N	\N	\N	\N	admin	pbkdf2:sha256:260000$7ebeoSMr6DXVbTYj$1a3557fece4661f0cc6691b7a0945638521978b511bad8f82beb27039ae8dbc4	\N	\N	t
+\.
+
+
+--
+-- Name: good_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.good_id_seq', 1, false);
+
+
+--
+-- Name: order_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.order_id_seq', 1, false);
+
+
+--
+-- Name: user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.user_id_seq', 1, true);
+
+
+--
 -- Name: good good_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 

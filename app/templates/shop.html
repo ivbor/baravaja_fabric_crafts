@@ -8,45 +8,125 @@ Shop - Baravaja Fabric Crafts
 
   <!-- Cards per Page and Filters -->
   <div class="options">
-   <label for="cards-per-page">Cards per Page:</label>
-   <select id="cards-per-page">
-    <option value="12">12</option>
-    <option value="24">24</option>
-    <option value="36">36</option>
-   </select>
+   <form method="GET" action="{{ url_for('shop') }}">
+    <label for="cards-per-page">Cards per Page:</label>
+     <select id="cards-per-page" name="items_per_page" 
+       onchange="this.form.submit()">
+      <option value="12" 
+       {% if pagination.per_page == 12 %}
+        selected
+       {% endif %}>12
+      </option>
+      <option value="24" 
+       {% if pagination.per_page == 24 %}
+        selected
+       {% endif %}>24
+      </option>
+      <option value="36" 
+       {% if pagination.per_page == 36 %}
+        selected
+       {% endif %}>36
+      </option>
+     </select>
 
-   <!-- Add filters for Goods database here -->
+    <label for="sort-key">Sort by:</label>
+      <select id="sort-key" name="sort_key" 
+        onchange="this.form.submit()">
+        <option value="name" 
+         {% if request.args.get('sort_key') == 'name' %}
+          selected
+         {% endif %}>Name
+        </option>
+        <option value="price" 
+         {% if request.args.get('sort_key') == 'price' %}
+          selected
+         {% endif %}>Price
+        </option>
+      </select>
 
-   <!-- Add other filters as needed -->
+    <label for="sort-order">Order:</label>
+      <select id="sort-order" name="sort_order" 
+        onchange="this.form.submit()">
+        <option value="asc" 
+         {% if request.args.get('sort_order') == 'asc' %}
+          selected
+         {% endif %}>Ascending
+        </option>
+        <option value="desc" 
+         {% if request.args.get('sort_order') == 'desc' %}
+          selected
+         {% endif %}>Descending
+        </option>
+      </select>
+    </form>
   </div>
 
   <!-- Page Number Switchers -->
-  <div class="page-switchers">
-   <!-- Display page numbers dynamically based on the number of pages -->
-   <span class="active">1</span>
-   <!-- Add more page numbers as needed -->
+  <div class="page-switchers-top">
+   <a> Pages:  </a>
+   {% for page_num in pagination.iter_pages() %}
+      {% if page_num %}
+        {% if page_num == pagination.page %}
+        <span class="active">
+          <a class="page-num">
+          <strong>{{ page_num }}</strong>
+          </a>
+        </span>
+        {% else %}
+          <a class="page-num" href="{{ url_for('shop', 
+            page=page_num, 
+            items_per_page=pagination.per_page, 
+            sort_key=request.args.get('sort_key'), 
+            sort_order=request.args.get('sort_order')) }}">
+            {{ page_num }}
+          </a>
+        {% endif %}
+      {% else %}
+        <span class="ellipsis">...</span>
+      {% endif %}
+   {% endfor %}
   </div>
 
   <!-- Product Cards -->
   <div class="product-cards">
    {% for card in products %}
-   <div class="card">
-    <img 
-     src="{{ url_for('static', filename=card.photos[0]) }}" 
+   <div class="product-card">
+    <img class="product-image"
+     src="{{ url_for('get_goods_photo', 
+     filename=card.photos.split(' ')[0]) }}" 
      alt="{{ card.name }}">
-    <h3>{{ card.name }}</h3>
+    <h3 class="product-name">{{ card.name }}</h3>
     <!-- price in pln, rub and eur -->
-    <p>Price: {{ card.price }} </p>
-    <button>Add to Cart</button>
+    <p class="product-price">Price: {{ card.price }} </p>
+    <button class="add-to-cart-btn">Add to Cart</button>
    </div>
    {% endfor %}
   </div>
 
   <!-- Page Number Switchers -->
-  <div class="page-switchers">
-   <!-- Display page numbers dynamically based on the number of pages -->
-   <span class="active">1</span>
-   <!-- Add more page numbers as needed -->
+  <div class="page-switchers-bottom">
+   <a> Pages:  </a>
+   {% for page_num in pagination.iter_pages() %}
+      {% if page_num %}
+        {% if page_num == pagination.page %}
+        <span class="active">
+          <a class="page-num">
+          <strong>{{ page_num }}</strong>
+          </a>
+        </span>
+        {% else %}
+          <a class="page-num" href="{{ url_for('shop', 
+            page=page_num, 
+            items_per_page=pagination.per_page, 
+            sort_key=request.args.get('sort_key'), 
+            sort_order=request.args.get('sort_order')) }}">
+            {{ page_num }} 
+          </a>
+        {% endif %}
+      {% else %}
+        <span class="ellipsis">...</span>
+      {% endif %}
+   {% endfor %}
   </div>
  </div>
 {% endblock %}

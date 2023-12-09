@@ -168,8 +168,7 @@ def delete(obj, obj_id):
 def sync_to_file():
     try:
         subprocess.run(['pg_dump',
-                        '-U', app.config['SQLALCHEMY_DATABASE_URI']
-                        .split('@')[0].split('/')[-1],
+                        '-U', 'postgres',
                         '-d', app.config['SQLALCHEMY_DATABASE_URI']
                         .split('/')[-1],
                         '-f', os.getcwd() + '/backup.dump'])

@@ -170,6 +170,26 @@ COPY public.good (id, name, price, description, photos) FROM stdin;
 1	good_1	20	Bag 1	good_1_1.jpg good_1_2.jpg good_1_3.jpg good_1_4.jpg
 2	good_2	20	Bag 2	good_2_1.jpg good_2_2.jpg
 3	good_4	20	Bag 4	good_4_1.jpg
+4	good_3	5	Good 3	good_3_1.jpg
+5	good_5	30	Bag 5	good_5_1.jpg
+6	good_6	5	Good 6	good_6_1.jpg
+7	good_7	25	Bag 7	good_7_1.jpg good_7_2.jpg
+8	good_8	30	Bag 8	good_8_1.jpg
+9	good_9	15	Good 9	good_9_1.jpeg
+10	good_10	18	Good 10	good_10_1.jpeg
+11	good_11	15	Good 11	good_11_1.jpeg
+12	good_12	30	Bag 12	good_12_1.jpeg
+13	good_13	30	Bag 13	good_13_1.jpeg
+14	good_14	25	Bag 14	good_14_1.jpeg
+16	good_16	19	Good 16	good_16_1.jpeg
+15	good_15	18	Good 15	good_15_1.jpeg
+17	good_17	50	Good 17	good_17_1.jpeg
+18	good_18	15	Good 18	good_18_1.jpeg
+19	good_19	45	Good 19	good_19_1.jpeg
+20	good_20	55	Good 20	good_20_1.jpeg
+21	good_21	18	Good 21	good_21_1.jpeg good_21_2.jpeg
+22	good_22	30	Bag 22	good_22_1.jpeg
+23	good_23	30	Bag 23	good_23_1.jpeg good_23_2.jpeg
 \.
 
 

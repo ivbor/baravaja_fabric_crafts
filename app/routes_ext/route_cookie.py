@@ -12,6 +12,7 @@ def set_cookie(cookie_name, cookie_value, response=None):
 
     if not request.cookies.get(cookie_name):
 
+        response.set_cookie(cookie_name, cookie_value)
         app.logger.info(f'cookie {cookie_name} is' +
                         f' set to {cookie_value} successfully')
 

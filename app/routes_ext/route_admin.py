@@ -184,19 +184,28 @@ def sync_from_file():
 
     try:
         db.db.session.remove()
-        db_user = app.config['SQLALCHEMY_DATABASE_URI'].split(
-            '@')[0].split('/')[-1]
+        db_user = 'postgres'
         db_name = app.config['SQLALCHEMY_DATABASE_URI'].split('/')[-1]
 
-        subprocess.run(['psql', f'--username={db_user}', '-c',
-                        'SELECT pg_terminate_backend(pid) ' +
+        subprocess.run(['psql',
+                        '-h', 'localhost',
+                        '-U', db_user,
+                        '-c', 'SELECT pg_terminate_backend(pid) ' +
                         f'FROM pg_stat_activity WHERE datname=\'{db_name}\';'])
-        subprocess.run(['psql', f'--username={db_user}', '-d', db_user,
+        subprocess.run(['psql',
+                        '-h', 'localhost',
+                        '-U', db_user,
+                        '-d', db_user,
                         '-c', f'drop database {db_name};'])
-        subprocess.run(['psql', f'--username={db_user}',
+        subprocess.run(['psql',
+                        '-h', 'localhost',
+                        '-U', db_user,
                         '-c', f'create database {db_name};'])
-        subprocess.run(['psql', '-h', 'localhost', '-U', db_user,
-                       '-d', db_name, '-f', './backup.dump'])
+        subprocess.run(['psql',
+                        '-h', 'localhost',
+                        '-U', db_user,
+                        '-d', db_name,
+                        '-f', './backup.dump'])
 
         db.db.init_app(app)
         db.db.create_all()

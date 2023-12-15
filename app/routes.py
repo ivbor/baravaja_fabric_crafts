@@ -48,12 +48,6 @@ def before_request():
         return response
 
 
-# serving static
-@app.route('/favicon.ico/')
-def get_icon():
-    return app.send_static_file('images/logo/logo.png')
-
-
 @app.route('/static/images/slides/<path:filename>')
 def get_slide(filename):
     return app.send_static_file(f'images/slides/{filename}')

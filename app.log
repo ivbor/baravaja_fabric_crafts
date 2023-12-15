@@ -1,0 +1,612 @@
+<<<<<<< HEAD
+=======
+[2023-12-15 00:29:09,397] {/home/ivbor/baravaja_fabric_crafts/app/app.py:38}
+INFO - new app <Flask 'app'> successfully initialized
+[2023-12-15 00:29:09,397] {/home/ivbor/baravaja_fabric_crafts/app/app.py:41}
+INFO - new config <Config {'ENV': 'production', 'DEBUG': True, 'TESTING': False,
+'PROPAGATE_EXCEPTIONS': None, 'PRESERVE_CONTEXT_ON_EXCEPTION': None,
+'SECRET_KEY': '05c1a76bfefd87e0b064e9e5e6594ddb', 'PERMANENT_SESSION_LIFETIME':
+datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None,
+'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session',
+'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None,
+'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False,
+'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True,
+'MAX_CONTENT_LENGTH': None, 'SEND_FILE_MAX_AGE_DEFAULT': None,
+'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False,
+'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http',
+'JSON_AS_ASCII': True, 'JSON_SORT_KEYS': True, 'JSONIFY_PRETTYPRINT_REGULAR':
+False, 'JSONIFY_MIMETYPE': 'application/json', 'TEMPLATES_AUTO_RELOAD': None,
+'MAX_COOKIE_SIZE': 4093, 'LANGUAGES': ['en', 'pl', 'ru'], 'SESSION_TYPE':
+'filesystem', 'SQLALCHEMY_DATABASE_URI':
+'postgresql://postgres:postgres@localhost/bfc_database', 'WTF_CSRF_SECRET_KEY':
+'e4abc9ecc8ebd41cbcb79a5960f21bd0'}> successfully adopted
+[2023-12-15 00:29:09,399] {/home/ivbor/baravaja_fabric_crafts/app/app.py:45}
+INFO - new db <SQLAlchemy engine=None> successfully created within <Flask 'app'>
+context
+[2023-12-15 00:29:09,425] {/home/ivbor/baravaja_fabric_crafts/app/app.py:49}
+INFO - tables inside db created
+[2023-12-15 00:29:09,426] {/home/ivbor/baravaja_fabric_crafts/app/app.py:52}
+INFO - CSRF protection working
+[2023-12-15 00:29:09,426] {/home/ivbor/baravaja_fabric_crafts/app/app.py:54}
+INFO - current path is /home/ivbor/baravaja_fabric_crafts/var/app-instance
+[2023-12-15 00:29:09,432] {/home/ivbor/baravaja_fabric_crafts/app/app.py:58}
+INFO - current admin is <User 1>
+[2023-12-15 00:29:09,470] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:21}
+INFO - new login <flask_login.login_manager.LoginManager object at
+0x7f522f63f490> successfully created
+[2023-12-15 00:29:23,853] {/home/ivbor/baravaja_fabric_crafts/app/app.py:38}
+INFO - new app <Flask 'app'> successfully initialized
+[2023-12-15 00:29:23,854] {/home/ivbor/baravaja_fabric_crafts/app/app.py:41}
+INFO - new config <Config {'ENV': 'production', 'DEBUG': True, 'TESTING': False,
+'PROPAGATE_EXCEPTIONS': None, 'PRESERVE_CONTEXT_ON_EXCEPTION': None,
+'SECRET_KEY': '942743ae7fc8d47b312afe24d4881896', 'PERMANENT_SESSION_LIFETIME':
+datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None,
+'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session',
+'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None,
+'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False,
+'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True,
+'MAX_CONTENT_LENGTH': None, 'SEND_FILE_MAX_AGE_DEFAULT': None,
+'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False,
+'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http',
+'JSON_AS_ASCII': True, 'JSON_SORT_KEYS': True, 'JSONIFY_PRETTYPRINT_REGULAR':
+False, 'JSONIFY_MIMETYPE': 'application/json', 'TEMPLATES_AUTO_RELOAD': None,
+'MAX_COOKIE_SIZE': 4093, 'LANGUAGES': ['en', 'pl', 'ru'], 'SESSION_TYPE':
+'filesystem', 'SQLALCHEMY_DATABASE_URI':
+'postgresql://postgres:postgres@localhost/bfc_database', 'WTF_CSRF_SECRET_KEY':
+'81cea8af0cdd0a59aaa2203b915ced15'}> successfully adopted
+[2023-12-15 00:29:23,855] {/home/ivbor/baravaja_fabric_crafts/app/app.py:45}
+INFO - new db <SQLAlchemy engine=None> successfully created within <Flask 'app'>
+context
+[2023-12-15 00:29:23,880] {/home/ivbor/baravaja_fabric_crafts/app/app.py:49}
+INFO - tables inside db created
+[2023-12-15 00:29:23,880] {/home/ivbor/baravaja_fabric_crafts/app/app.py:52}
+INFO - CSRF protection working
+[2023-12-15 00:29:23,880] {/home/ivbor/baravaja_fabric_crafts/app/app.py:54}
+INFO - current path is /home/ivbor/baravaja_fabric_crafts/var/app-instance
+[2023-12-15 00:29:23,886] {/home/ivbor/baravaja_fabric_crafts/app/app.py:58}
+INFO - current admin is <User 1>
+[2023-12-15 00:29:23,922] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:21}
+INFO - new login <flask_login.login_manager.LoginManager object at
+0x7fdfdee4b1d0> successfully created
+[2023-12-15 00:37:39,864] {/home/ivbor/baravaja_fabric_crafts/app/app.py:38}
+INFO - new app <Flask 'app'> successfully initialized
+[2023-12-15 00:37:39,864] {/home/ivbor/baravaja_fabric_crafts/app/app.py:41}
+INFO - new config <Config {'ENV': 'production', 'DEBUG': True, 'TESTING': False,
+'PROPAGATE_EXCEPTIONS': None, 'PRESERVE_CONTEXT_ON_EXCEPTION': None,
+'SECRET_KEY': '8ecb4d9dac26a59b27e073d220ee1c66', 'PERMANENT_SESSION_LIFETIME':
+datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None,
+'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session',
+'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None,
+'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False,
+'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True,
+'MAX_CONTENT_LENGTH': None, 'SEND_FILE_MAX_AGE_DEFAULT': None,
+'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False,
+'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http',
+'JSON_AS_ASCII': True, 'JSON_SORT_KEYS': True, 'JSONIFY_PRETTYPRINT_REGULAR':
+False, 'JSONIFY_MIMETYPE': 'application/json', 'TEMPLATES_AUTO_RELOAD': None,
+'MAX_COOKIE_SIZE': 4093, 'LANGUAGES': ['en', 'pl', 'ru'], 'SESSION_TYPE':
+'filesystem', 'SQLALCHEMY_DATABASE_URI':
+'postgresql://postgres:postgres@localhost/bfc_database', 'WTF_CSRF_SECRET_KEY':
+'b97d02cb51c95fb1b0e7568a72fee8e9'}> successfully adopted
+[2023-12-15 00:37:39,867] {/home/ivbor/baravaja_fabric_crafts/app/app.py:45}
+INFO - new db <SQLAlchemy engine=None> successfully created within <Flask 'app'>
+context
+[2023-12-15 00:37:39,910] {/home/ivbor/baravaja_fabric_crafts/app/app.py:49}
+INFO - tables inside db created
+[2023-12-15 00:37:39,911] {/home/ivbor/baravaja_fabric_crafts/app/app.py:52}
+INFO - CSRF protection working
+[2023-12-15 00:37:39,911] {/home/ivbor/baravaja_fabric_crafts/app/app.py:54}
+INFO - current path is /home/ivbor/baravaja_fabric_crafts/var/app-instance
+[2023-12-15 00:37:39,921] {/home/ivbor/baravaja_fabric_crafts/app/app.py:58}
+INFO - current admin is <User 1>
+[2023-12-15 00:37:39,966] {/home/ivbor/baravaja_fabric_crafts/app/app.py:38}
+INFO - new app <Flask 'app'> successfully initialized
+[2023-12-15 00:37:39,966] {/home/ivbor/baravaja_fabric_crafts/app/app.py:41}
+INFO - new config <Config {'ENV': 'production', 'DEBUG': True, 'TESTING': False,
+'PROPAGATE_EXCEPTIONS': None, 'PRESERVE_CONTEXT_ON_EXCEPTION': None,
+'SECRET_KEY': 'a14f0f488e1694af7df32b693d7f52fe', 'PERMANENT_SESSION_LIFETIME':
+datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None,
+'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session',
+'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None,
+'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False,
+'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True,
+'MAX_CONTENT_LENGTH': None, 'SEND_FILE_MAX_AGE_DEFAULT': None,
+'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False,
+'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http',
+'JSON_AS_ASCII': True, 'JSON_SORT_KEYS': True, 'JSONIFY_PRETTYPRINT_REGULAR':
+False, 'JSONIFY_MIMETYPE': 'application/json', 'TEMPLATES_AUTO_RELOAD': None,
+'MAX_COOKIE_SIZE': 4093, 'LANGUAGES': ['en', 'pl', 'ru'], 'SESSION_TYPE':
+'filesystem', 'SQLALCHEMY_DATABASE_URI':
+'postgresql://postgres:postgres@localhost/bfc_database', 'WTF_CSRF_SECRET_KEY':
+'a1a2e2ecb154cfe78fa424c2e5041024'}> successfully adopted
+[2023-12-15 00:37:39,969] {/home/ivbor/baravaja_fabric_crafts/app/app.py:45}
+INFO - new db <SQLAlchemy engine=None> successfully created within <Flask 'app'>
+context
+[2023-12-15 00:37:39,978] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:21}
+INFO - new login <flask_login.login_manager.LoginManager object at
+0x7fb6f52ffa50> successfully created
+[2023-12-15 00:37:40,004] {/home/ivbor/baravaja_fabric_crafts/app/app.py:49}
+INFO - tables inside db created
+[2023-12-15 00:37:40,004] {/home/ivbor/baravaja_fabric_crafts/app/app.py:52}
+INFO - CSRF protection working
+[2023-12-15 00:37:40,005] {/home/ivbor/baravaja_fabric_crafts/app/app.py:54}
+INFO - current path is /home/ivbor/baravaja_fabric_crafts/var/app-instance
+[2023-12-15 00:37:40,012] {/home/ivbor/baravaja_fabric_crafts/app/app.py:58}
+INFO - current admin is <User 1>
+[2023-12-15 00:37:40,056] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:21}
+INFO - new login <flask_login.login_manager.LoginManager object at
+0x7fb6f52ffa10> successfully created
+[2023-12-15 00:53:14,633] {/home/ivbor/baravaja_fabric_crafts/app/app.py:38}
+INFO - new app <Flask 'app'> successfully initialized
+[2023-12-15 00:53:14,634] {/home/ivbor/baravaja_fabric_crafts/app/app.py:41}
+INFO - new config <Config {'ENV': 'production', 'DEBUG': True, 'TESTING': False,
+'PROPAGATE_EXCEPTIONS': None, 'PRESERVE_CONTEXT_ON_EXCEPTION': None,
+'SECRET_KEY': '667677010d418e35f9c95c89bdae39d3', 'PERMANENT_SESSION_LIFETIME':
+datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None,
+'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session',
+'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None,
+'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False,
+'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True,
+'MAX_CONTENT_LENGTH': None, 'SEND_FILE_MAX_AGE_DEFAULT': None,
+'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False,
+'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http',
+'JSON_AS_ASCII': True, 'JSON_SORT_KEYS': True, 'JSONIFY_PRETTYPRINT_REGULAR':
+False, 'JSONIFY_MIMETYPE': 'application/json', 'TEMPLATES_AUTO_RELOAD': None,
+'MAX_COOKIE_SIZE': 4093, 'LANGUAGES': ['en', 'pl', 'ru'], 'SESSION_TYPE':
+'filesystem', 'SQLALCHEMY_DATABASE_URI':
+'postgresql://postgres:postgres@localhost/bfc_database', 'WTF_CSRF_SECRET_KEY':
+'57a0756bb61906019c338843e80c7297'}> successfully adopted
+[2023-12-15 00:53:14,636] {/home/ivbor/baravaja_fabric_crafts/app/app.py:45}
+INFO - new db <SQLAlchemy engine=None> successfully created within <Flask 'app'>
+context
+[2023-12-15 00:53:14,958] {/home/ivbor/baravaja_fabric_crafts/app/app.py:49}
+INFO - tables inside db created
+[2023-12-15 00:53:14,958] {/home/ivbor/baravaja_fabric_crafts/app/app.py:52}
+INFO - CSRF protection working
+[2023-12-15 00:53:14,958] {/home/ivbor/baravaja_fabric_crafts/app/app.py:54}
+INFO - current path is /home/ivbor/baravaja_fabric_crafts/var/app-instance
+[2023-12-15 00:53:14,967] {/home/ivbor/baravaja_fabric_crafts/app/app.py:58}
+INFO - current admin is <User 1>
+[2023-12-15 00:53:15,039] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:21}
+INFO - new login <flask_login.login_manager.LoginManager object at
+0x7fc4c713b990> successfully created
+[2023-12-15 01:01:12,121] {/home/ivbor/baravaja_fabric_crafts/app/app.py:38}
+INFO - new app <Flask 'app'> successfully initialized
+[2023-12-15 01:01:12,121] {/home/ivbor/baravaja_fabric_crafts/app/app.py:41}
+INFO - new config <Config {'ENV': 'production', 'DEBUG': True, 'TESTING': False,
+'PROPAGATE_EXCEPTIONS': None, 'PRESERVE_CONTEXT_ON_EXCEPTION': None,
+'SECRET_KEY': '9298f9cfe6d8ac9c5d711d1c32df9e20', 'PERMANENT_SESSION_LIFETIME':
+datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None,
+'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session',
+'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None,
+'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False,
+'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True,
+'MAX_CONTENT_LENGTH': None, 'SEND_FILE_MAX_AGE_DEFAULT': None,
+'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False,
+'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http',
+'JSON_AS_ASCII': True, 'JSON_SORT_KEYS': True, 'JSONIFY_PRETTYPRINT_REGULAR':
+False, 'JSONIFY_MIMETYPE': 'application/json', 'TEMPLATES_AUTO_RELOAD': None,
+'MAX_COOKIE_SIZE': 4093, 'LANGUAGES': ['en', 'pl', 'ru'], 'SESSION_TYPE':
+'filesystem', 'SQLALCHEMY_DATABASE_URI':
+'postgresql://postgres:postgres@localhost/bfc_database', 'WTF_CSRF_SECRET_KEY':
+'656eef7240df2e4df073867d22673c0c'}> successfully adopted
+[2023-12-15 01:01:12,123] {/home/ivbor/baravaja_fabric_crafts/app/app.py:45}
+INFO - new db <SQLAlchemy engine=None> successfully created within <Flask 'app'>
+context
+[2023-12-15 01:01:12,149] {/home/ivbor/baravaja_fabric_crafts/app/app.py:49}
+INFO - tables inside db created
+[2023-12-15 01:01:12,150] {/home/ivbor/baravaja_fabric_crafts/app/app.py:52}
+INFO - CSRF protection working
+[2023-12-15 01:01:12,150] {/home/ivbor/baravaja_fabric_crafts/app/app.py:54}
+INFO - current path is /home/ivbor/baravaja_fabric_crafts/var/app-instance
+[2023-12-15 01:01:12,156] {/home/ivbor/baravaja_fabric_crafts/app/app.py:58}
+INFO - current admin is <User 1>
+[2023-12-15 01:01:12,196] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:21}
+INFO - new login <flask_login.login_manager.LoginManager object at
+0x7fea7d2c1750> successfully created
+[2023-12-15 01:01:23,904] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:89}
+INFO - /home page loaded
+[2023-12-15 01:01:23,904]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:36} INFO -
+rendering index.html with ImmutableMultiDict([('pvisitor',
+'1c2d2974-3a90-4cc3-a15e-10419271df87'), ('user_language', 'en-US'),
+('logged_in', 'false'), ('session', 'eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiYWY
+1ODllYzIxYjFmZDUxNTQ1ZjQyMGUyYzFhZmEwOTcwZjA2NzNlNyJ9.ZXSuAg.P122WCoW6L-
+zJqMPaLKJse97iFo')])
+[2023-12-15 01:01:57,518] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:81}
+INFO - redirecting from / to /home
+[2023-12-15 01:01:57,707] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:89}
+INFO - /home page loaded
+[2023-12-15 01:01:57,708]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:36} INFO -
+rendering index.html with ImmutableMultiDict([('pvisitor',
+'1c2d2974-3a90-4cc3-a15e-10419271df87'), ('user_language', 'en-US'),
+('logged_in', 'false'), ('session', 'eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiYWY
+1ODllYzIxYjFmZDUxNTQ1ZjQyMGUyYzFhZmEwOTcwZjA2NzNlNyJ9.ZXSuAg.P122WCoW6L-
+zJqMPaLKJse97iFo')])
+[2023-12-15 01:03:32,922] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:81}
+INFO - redirecting from / to /home
+[2023-12-15 01:03:33,110] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:89}
+INFO - /home page loaded
+[2023-12-15 01:03:33,111]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:36} INFO -
+rendering index.html with ImmutableMultiDict([('user_language', 'en-US'),
+('session', '.eJwljktuAzEMQ-_idReWJVtWLjOwfkhQoAVmklXRu8dFlyTBR_6UI8-
+47uX2PF_xUY6Hl1tZNMPG7DJZA70rmGlvvc421dJElBlTGqR4DXbFyRgQsBCg8vhLwHRQYNSlC9biRUn
+RQiuiSbNJFXCi2eaRhdDuCOXE0WrZR15XnP9vYEu7zjye35_xtY2xWXsHOcjVfCS2SBd0wwrEzbl2Mu_
+l9w0XfD9r.ZXSo6A.cw2wocPgpFQhPqqs7daejT4njPU'), ('logged_in', 'false')])
+[2023-12-15 01:03:42,766] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:81}
+INFO - redirecting from / to /home
+[2023-12-15 01:03:42,960] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:89}
+INFO - /home page loaded
+[2023-12-15 01:03:42,960]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:36} INFO -
+rendering index.html with ImmutableMultiDict([('user_language', 'en-US'),
+('session', '.eJwljktuAzEMQ-_idReWJVtWLjOwfkhQoAVmklXRu8dFlyTBR_6UI8-
+47uX2PF_xUY6Hl1tZNMPG7DJZA70rmGlvvc421dJElBlTGqR4DXbFyRgQsBCg8vhLwHRQYNSlC9biRUn
+RQiuiSbNJFXCi2eaRhdDuCOXE0WrZR15XnP9vYEu7zjye35_xtY2xWXsHOcjVfCS2SBd0wwrEzbl2Mu_
+l9w0XfD9r.ZXSo6A.cw2wocPgpFQhPqqs7daejT4njPU'), ('logged_in', 'false')])
+[2023-12-15 01:03:50,508] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:81}
+INFO - redirecting from / to /home
+[2023-12-15 01:03:50,696] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:89}
+INFO - /home page loaded
+[2023-12-15 01:03:50,696]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:36} INFO -
+rendering index.html with ImmutableMultiDict([('user_language', 'en-US'),
+('session', '.eJwljktuAzEMQ-_idReWJVtWLjOwfkhQoAVmklXRu8dFlyTBR_6UI8-
+47uX2PF_xUY6Hl1tZNMPG7DJZA70rmGlvvc421dJElBlTGqR4DXbFyRgQsBCg8vhLwHRQYNSlC9biRUn
+RQiuiSbNJFXCi2eaRhdDuCOXE0WrZR15XnP9vYEu7zjye35_xtY2xWXsHOcjVfCS2SBd0wwrEzbl2Mu_
+l9w0XfD9r.ZXSo6A.cw2wocPgpFQhPqqs7daejT4njPU'), ('logged_in', 'false')])
+[2023-12-15 01:08:32,143]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_language.py:41} INFO -
+getting user language from browser
+[2023-12-15 01:08:32,172]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:9} INFO -
+cookie user_language is being set to en-US
+[2023-12-15 01:08:32,173]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:16} INFO -
+cookie user_language is set to en-US successfully
+[2023-12-15 01:08:32,173]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:9} INFO -
+cookie user_language is being set to en-US
+[2023-12-15 01:08:32,173]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:16} INFO -
+cookie user_language is set to en-US successfully
+[2023-12-15 01:08:33,148]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_language.py:41} INFO -
+getting user language from browser
+[2023-12-15 01:08:33,148]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:9} INFO -
+cookie user_language is being set to en-US
+[2023-12-15 01:08:33,149]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:16} INFO -
+cookie user_language is set to en-US successfully
+[2023-12-15 01:08:33,149]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:9} INFO -
+cookie user_language is being set to en-US
+[2023-12-15 01:08:33,149]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:16} INFO -
+cookie user_language is set to en-US successfully
+[2023-12-15 01:08:33,241] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:89}
+INFO - /home page loaded
+[2023-12-15 01:08:33,241]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:36} INFO -
+rendering index.html with ImmutableMultiDict([('user_language', 'en-US')])
+[2023-12-15 01:08:34,135] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:177}
+INFO - loading /shop
+[2023-12-15 01:08:34,190]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:36} INFO -
+rendering shop.html with ImmutableMultiDict([('user_language', 'en-US')])
+[2023-12-15 01:08:34,230] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:97}
+INFO - loading /login
+[2023-12-15 01:08:34,231] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:100}
+INFO - form <app.forms.LoginForm object at 0x7fea7d912cd0> is loaded
+[2023-12-15 01:08:34,231] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:128}
+INFO - /login request method get
+[2023-12-15 01:08:34,231]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:36} INFO -
+rendering login.html with ImmutableMultiDict([('user_language', 'en-US')])
+[2023-12-15 01:08:34,304] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:177}
+INFO - loading /shop
+[2023-12-15 01:08:34,307]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:36} INFO -
+rendering shop.html with ImmutableMultiDict([('user_language', 'en-US')])
+[2023-12-15 01:08:34,317] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:97}
+INFO - loading /login
+[2023-12-15 01:08:34,317] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:100}
+INFO - form <app.forms.LoginForm object at 0x7fea7cb04b50> is loaded
+[2023-12-15 01:08:34,317] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:128}
+INFO - /login request method get
+[2023-12-15 01:08:34,318]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:36} INFO -
+rendering login.html with ImmutableMultiDict([('user_language', 'en-US'),
+('session', 'eyJfZmxhc2hlcyI6W3siIHQiOlsibWVzc2FnZSIsIlBsZWFzZSBsb2cgaW4gdG8gYWN
+jZXNzIHRoaXMgcGFnZS4iXX1dfQ.ZXunEg.OEW1ZKhmRtqXId2apaUF765KXaw')])
+[2023-12-15 01:08:34,337] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:202}
+INFO - loading /restore
+[2023-12-15 01:08:34,337]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:36} INFO -
+rendering restore.html with ImmutableMultiDict([('user_language', 'en-US'),
+('session', 'eyJjc3JmX3Rva2VuIjoiYzk0NTYzMTQ1N2FjN2U3NjA4NzJkYmYxOWQ2NTkxMjIwYjV
+mZGQxMSJ9.ZXunEg.kdhjwnzjo0SZtAJAm06ZARCqmDg')])
+[2023-12-15 01:08:34,688] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:136}
+INFO - loading /register
+[2023-12-15 01:08:34,688]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:36} INFO -
+rendering register.html with ImmutableMultiDict([('user_language', 'en-US'),
+('session', 'eyJjc3JmX3Rva2VuIjoiYzk0NTYzMTQ1N2FjN2U3NjA4NzJkYmYxOWQ2NTkxMjIwYjV
+mZGQxMSJ9.ZXunEg.kdhjwnzjo0SZtAJAm06ZARCqmDg')])
+[2023-12-15 01:08:51,626]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_language.py:7} INFO -
+trying to get location of the userwith ip 10.182.0.2
+[2023-12-15 01:08:51,992]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:9} INFO -
+cookie user_language is being set to en
+[2023-12-15 01:08:51,992]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:16} INFO -
+cookie user_language is set to en successfully
+[2023-12-15 01:08:53,972] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:81}
+INFO - redirecting from / to /home
+[2023-12-15 01:08:54,164] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:89}
+INFO - /home page loaded
+[2023-12-15 01:08:54,164]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:36} INFO -
+rendering index.html with ImmutableMultiDict([('user_language', 'en-US'),
+('session', '.eJwljktuAzEMQ-_idReWJVtWLjOwfkhQoAVmklXRu8dFlyTBR_6UI8-
+47uX2PF_xUY6Hl1tZNMPG7DJZA70rmGlvvc421dJElBlTGqR4DXbFyRgQsBCg8vhLwHRQYNSlC9biRUn
+RQiuiSbNJFXCi2eaRhdDuCOXE0WrZR15XnP9vYEu7zjye35_xtY2xWXsHOcjVfCS2SBd0wwrEzbl2Mu_
+l9w0XfD9r.ZXSo6A.cw2wocPgpFQhPqqs7daejT4njPU'), ('logged_in', 'false')])
+[2023-12-15 01:09:09,746] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:81}
+INFO - redirecting from / to /home
+[2023-12-15 01:09:09,938] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:89}
+INFO - /home page loaded
+[2023-12-15 01:09:09,938]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:36} INFO -
+rendering index.html with ImmutableMultiDict([('user_language', 'en-US')])
+[2023-12-15 01:09:20,419]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_language.py:7} INFO -
+trying to get location of the userwith ip 10.182.0.2
+[2023-12-15 01:09:20,623]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:9} INFO -
+cookie user_language is being set to en
+[2023-12-15 01:09:20,624]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:16} INFO -
+cookie user_language is set to en successfully
+[2023-12-15 01:09:23,058]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_language.py:7} INFO -
+trying to get location of the userwith ip 10.182.0.2
+[2023-12-15 01:09:23,138]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:9} INFO -
+cookie user_language is being set to en
+[2023-12-15 01:09:23,139]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:16} INFO -
+cookie user_language is set to en successfully
+[2023-12-15 01:11:57,120] {/home/ivbor/baravaja_fabric_crafts/app/app.py:38}
+INFO - new app <Flask 'app'> successfully initialized
+[2023-12-15 01:11:57,120] {/home/ivbor/baravaja_fabric_crafts/app/app.py:41}
+INFO - new config <Config {'ENV': 'production', 'DEBUG': True, 'TESTING': False,
+'PROPAGATE_EXCEPTIONS': None, 'PRESERVE_CONTEXT_ON_EXCEPTION': None,
+'SECRET_KEY': '1b987a4c720805eed6159c8e91da3e7c', 'PERMANENT_SESSION_LIFETIME':
+datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None,
+'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session',
+'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None,
+'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False,
+'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True,
+'MAX_CONTENT_LENGTH': None, 'SEND_FILE_MAX_AGE_DEFAULT': None,
+'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False,
+'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http',
+'JSON_AS_ASCII': True, 'JSON_SORT_KEYS': True, 'JSONIFY_PRETTYPRINT_REGULAR':
+False, 'JSONIFY_MIMETYPE': 'application/json', 'TEMPLATES_AUTO_RELOAD': None,
+'MAX_COOKIE_SIZE': 4093, 'LANGUAGES': ['en', 'pl', 'ru'], 'SESSION_TYPE':
+'filesystem', 'SQLALCHEMY_DATABASE_URI':
+'postgresql://postgres:postgres@localhost/bfc_database', 'WTF_CSRF_SECRET_KEY':
+'440bcc15a62eee94dd5fc94fe4536923'}> successfully adopted
+[2023-12-15 01:11:57,124] {/home/ivbor/baravaja_fabric_crafts/app/app.py:45}
+INFO - new db <SQLAlchemy engine=None> successfully created within <Flask 'app'>
+context
+[2023-12-15 01:11:57,227] {/home/ivbor/baravaja_fabric_crafts/app/app.py:49}
+INFO - tables inside db created
+[2023-12-15 01:11:57,227] {/home/ivbor/baravaja_fabric_crafts/app/app.py:52}
+INFO - CSRF protection working
+[2023-12-15 01:11:57,227] {/home/ivbor/baravaja_fabric_crafts/app/app.py:54}
+INFO - current path is /home/ivbor/baravaja_fabric_crafts/var/app-instance
+[2023-12-15 01:11:57,235] {/home/ivbor/baravaja_fabric_crafts/app/app.py:58}
+INFO - current admin is <User 1>
+[2023-12-15 01:11:57,521] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:21}
+INFO - new login <flask_login.login_manager.LoginManager object at
+0x7f17e280bcd0> successfully created
+[2023-12-15 01:12:46,092] {/home/ivbor/baravaja_fabric_crafts/app/app.py:38}
+INFO - new app <Flask 'app'> successfully initialized
+[2023-12-15 01:12:46,092] {/home/ivbor/baravaja_fabric_crafts/app/app.py:41}
+INFO - new config <Config {'ENV': 'production', 'DEBUG': True, 'TESTING': False,
+'PROPAGATE_EXCEPTIONS': None, 'PRESERVE_CONTEXT_ON_EXCEPTION': None,
+'SECRET_KEY': 'd25d9194de7887964dddde290e87fa19', 'PERMANENT_SESSION_LIFETIME':
+datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None,
+'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session',
+'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None,
+'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False,
+'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True,
+'MAX_CONTENT_LENGTH': None, 'SEND_FILE_MAX_AGE_DEFAULT': None,
+'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False,
+'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http',
+'JSON_AS_ASCII': True, 'JSON_SORT_KEYS': True, 'JSONIFY_PRETTYPRINT_REGULAR':
+False, 'JSONIFY_MIMETYPE': 'application/json', 'TEMPLATES_AUTO_RELOAD': None,
+'MAX_COOKIE_SIZE': 4093, 'LANGUAGES': ['en', 'pl', 'ru'], 'SESSION_TYPE':
+'filesystem', 'SQLALCHEMY_DATABASE_URI':
+'postgresql://postgres:postgres@localhost/bfc_database', 'WTF_CSRF_SECRET_KEY':
+'f4022889000b1f012b329c2b04f400f1'}> successfully adopted
+[2023-12-15 01:12:46,094] {/home/ivbor/baravaja_fabric_crafts/app/app.py:45}
+INFO - new db <SQLAlchemy engine=None> successfully created within <Flask 'app'>
+context
+[2023-12-15 01:12:46,119] {/home/ivbor/baravaja_fabric_crafts/app/app.py:49}
+INFO - tables inside db created
+[2023-12-15 01:12:46,119] {/home/ivbor/baravaja_fabric_crafts/app/app.py:52}
+INFO - CSRF protection working
+[2023-12-15 01:12:46,119] {/home/ivbor/baravaja_fabric_crafts/app/app.py:54}
+INFO - current path is /home/ivbor/baravaja_fabric_crafts/var/app-instance
+[2023-12-15 01:12:46,126] {/home/ivbor/baravaja_fabric_crafts/app/app.py:58}
+INFO - current admin is <User 1>
+[2023-12-15 01:12:46,166] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:21}
+INFO - new login <flask_login.login_manager.LoginManager object at
+0x7fedfecbe510> successfully created
+[2023-12-15 01:21:19,669] {/home/ivbor/baravaja_fabric_crafts/app/app.py:38}
+INFO - new app <Flask 'app'> successfully initialized
+[2023-12-15 01:21:19,669] {/home/ivbor/baravaja_fabric_crafts/app/app.py:41}
+INFO - new config <Config {'ENV': 'production', 'DEBUG': True, 'TESTING': False,
+'PROPAGATE_EXCEPTIONS': None, 'PRESERVE_CONTEXT_ON_EXCEPTION': None,
+'SECRET_KEY': 'e0bbd6aa03d920f7fd136c301f161871', 'PERMANENT_SESSION_LIFETIME':
+datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None,
+'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session',
+'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None,
+'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False,
+'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True,
+'MAX_CONTENT_LENGTH': None, 'SEND_FILE_MAX_AGE_DEFAULT': None,
+'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False,
+'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http',
+'JSON_AS_ASCII': True, 'JSON_SORT_KEYS': True, 'JSONIFY_PRETTYPRINT_REGULAR':
+False, 'JSONIFY_MIMETYPE': 'application/json', 'TEMPLATES_AUTO_RELOAD': None,
+'MAX_COOKIE_SIZE': 4093, 'LANGUAGES': ['en', 'pl', 'ru'], 'SESSION_TYPE':
+'filesystem', 'SQLALCHEMY_DATABASE_URI':
+'postgresql://postgres:postgres@localhost/bfc_database', 'WTF_CSRF_SECRET_KEY':
+'0f2597054b4170d1e35aba4be77eac75'}> successfully adopted
+[2023-12-15 01:21:19,671] {/home/ivbor/baravaja_fabric_crafts/app/app.py:45}
+INFO - new db <SQLAlchemy engine=None> successfully created within <Flask 'app'>
+context
+[2023-12-15 01:21:19,697] {/home/ivbor/baravaja_fabric_crafts/app/app.py:49}
+INFO - tables inside db created
+[2023-12-15 01:21:19,697] {/home/ivbor/baravaja_fabric_crafts/app/app.py:52}
+INFO - CSRF protection working
+[2023-12-15 01:21:19,697] {/home/ivbor/baravaja_fabric_crafts/app/app.py:54}
+INFO - current path is /home/ivbor/baravaja_fabric_crafts/var/app-instance
+[2023-12-15 01:21:19,704] {/home/ivbor/baravaja_fabric_crafts/app/app.py:58}
+INFO - current admin is <User 1>
+[2023-12-15 01:21:19,741] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:21}
+INFO - new login <flask_login.login_manager.LoginManager object at
+0x7f06e1d2fa50> successfully created
+[2023-12-15 01:21:59,034] {/home/ivbor/baravaja_fabric_crafts/app/app.py:38}
+INFO - new app <Flask 'app'> successfully initialized
+[2023-12-15 01:21:59,034] {/home/ivbor/baravaja_fabric_crafts/app/app.py:41}
+INFO - new config <Config {'ENV': 'production', 'DEBUG': True, 'TESTING': False,
+'PROPAGATE_EXCEPTIONS': None, 'PRESERVE_CONTEXT_ON_EXCEPTION': None,
+'SECRET_KEY': '093cbbbb20eb1383db2d439b073f0474', 'PERMANENT_SESSION_LIFETIME':
+datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None,
+'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session',
+'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None,
+'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False,
+'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True,
+'MAX_CONTENT_LENGTH': None, 'SEND_FILE_MAX_AGE_DEFAULT': None,
+'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False,
+'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http',
+'JSON_AS_ASCII': True, 'JSON_SORT_KEYS': True, 'JSONIFY_PRETTYPRINT_REGULAR':
+False, 'JSONIFY_MIMETYPE': 'application/json', 'TEMPLATES_AUTO_RELOAD': None,
+'MAX_COOKIE_SIZE': 4093, 'LANGUAGES': ['en', 'pl', 'ru'], 'SESSION_TYPE':
+'filesystem', 'SQLALCHEMY_DATABASE_URI':
+'postgresql://postgres:postgres@localhost/bfc_database', 'WTF_CSRF_SECRET_KEY':
+'ed3a42b4d9d26e058cc3faf0086b9b11'}> successfully adopted
+[2023-12-15 01:21:59,036] {/home/ivbor/baravaja_fabric_crafts/app/app.py:45}
+INFO - new db <SQLAlchemy engine=None> successfully created within <Flask 'app'>
+context
+[2023-12-15 01:21:59,065] {/home/ivbor/baravaja_fabric_crafts/app/app.py:49}
+INFO - tables inside db created
+[2023-12-15 01:21:59,066] {/home/ivbor/baravaja_fabric_crafts/app/app.py:52}
+INFO - CSRF protection working
+[2023-12-15 01:21:59,066] {/home/ivbor/baravaja_fabric_crafts/app/app.py:54}
+INFO - current path is /home/ivbor/baravaja_fabric_crafts/var/app-instance
+[2023-12-15 01:21:59,072] {/home/ivbor/baravaja_fabric_crafts/app/app.py:58}
+INFO - current admin is <User 1>
+[2023-12-15 01:21:59,113] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:21}
+INFO - new login <flask_login.login_manager.LoginManager object at
+0x7fd37eb33e10> successfully created
+[2023-12-15 01:24:02,581] {/home/ivbor/baravaja_fabric_crafts/app/app.py:38}
+INFO - new app <Flask 'app'> successfully initialized
+[2023-12-15 01:24:02,581] {/home/ivbor/baravaja_fabric_crafts/app/app.py:41}
+INFO - new config <Config {'ENV': 'production', 'DEBUG': True, 'TESTING': False,
+'PROPAGATE_EXCEPTIONS': None, 'PRESERVE_CONTEXT_ON_EXCEPTION': None,
+'SECRET_KEY': '146a297e9099b885eac76ad1b26022a9', 'PERMANENT_SESSION_LIFETIME':
+datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None,
+'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session',
+'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None,
+'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False,
+'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True,
+'MAX_CONTENT_LENGTH': None, 'SEND_FILE_MAX_AGE_DEFAULT': None,
+'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False,
+'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http',
+'JSON_AS_ASCII': True, 'JSON_SORT_KEYS': True, 'JSONIFY_PRETTYPRINT_REGULAR':
+False, 'JSONIFY_MIMETYPE': 'application/json', 'TEMPLATES_AUTO_RELOAD': None,
+'MAX_COOKIE_SIZE': 4093, 'LANGUAGES': ['en', 'pl', 'ru'], 'SESSION_TYPE':
+'filesystem', 'SQLALCHEMY_DATABASE_URI':
+'postgresql://postgres:postgres@localhost/bfc_database', 'WTF_CSRF_SECRET_KEY':
+'ffa65993316bae151cc9cb51e215bf6d'}> successfully adopted
+[2023-12-15 01:24:02,583] {/home/ivbor/baravaja_fabric_crafts/app/app.py:45}
+INFO - new db <SQLAlchemy engine=None> successfully created within <Flask 'app'>
+context
+[2023-12-15 01:24:02,608] {/home/ivbor/baravaja_fabric_crafts/app/app.py:49}
+INFO - tables inside db created
+[2023-12-15 01:24:02,608] {/home/ivbor/baravaja_fabric_crafts/app/app.py:52}
+INFO - CSRF protection working
+[2023-12-15 01:24:02,608] {/home/ivbor/baravaja_fabric_crafts/app/app.py:54}
+INFO - current path is /home/ivbor/baravaja_fabric_crafts/var/app-instance
+[2023-12-15 01:24:02,615] {/home/ivbor/baravaja_fabric_crafts/app/app.py:58}
+INFO - current admin is <User 1>
+[2023-12-15 01:24:02,651] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:21}
+INFO - new login <flask_login.login_manager.LoginManager object at
+0x7f31aa733a10> successfully created
+[2023-12-15 01:26:26,398] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:81}
+INFO - redirecting from / to /home
+[2023-12-15 01:26:26,586] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:89}
+INFO - /home page loaded
+[2023-12-15 01:26:26,587]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:36} INFO -
+rendering index.html with ImmutableMultiDict([('user_language', 'en-US'),
+('session', '.eJwljktuAzEMQ-_idReWJVtWLjOwfkhQoAVmklXRu8dFlyTBR_6UI8-
+47uX2PF_xUY6Hl1tZNMPG7DJZA70rmGlvvc421dJElBlTGqR4DXbFyRgQsBCg8vhLwHRQYNSlC9biRUn
+RQiuiSbNJFXCi2eaRhdDuCOXE0WrZR15XnP9vYEu7zjye35_xtY2xWXsHOcjVfCS2SBd0wwrEzbl2Mu_
+l9w0XfD9r.ZXSo6A.cw2wocPgpFQhPqqs7daejT4njPU'), ('logged_in', 'false')])
+[2023-12-15 01:26:31,273] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:81}
+INFO - redirecting from / to /home
+[2023-12-15 01:26:31,468] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:89}
+INFO - /home page loaded
+[2023-12-15 01:26:31,468]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:36} INFO -
+rendering index.html with ImmutableMultiDict([('user_language', 'en-US'),
+('session', '.eJwljktuAzEMQ-_idReWJVtWLjOwfkhQoAVmklXRu8dFlyTBR_6UI8-
+47uX2PF_xUY6Hl1tZNMPG7DJZA70rmGlvvc421dJElBlTGqR4DXbFyRgQsBCg8vhLwHRQYNSlC9biRUn
+RQiuiSbNJFXCi2eaRhdDuCOXE0WrZR15XnP9vYEu7zjye35_xtY2xWXsHOcjVfCS2SBd0wwrEzbl2Mu_
+l9w0XfD9r.ZXSo6A.cw2wocPgpFQhPqqs7daejT4njPU'), ('logged_in', 'false')])
+[2023-12-15 01:26:58,759] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:89}
+INFO - /home page loaded
+[2023-12-15 01:26:58,759]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:36} INFO -
+rendering index.html with ImmutableMultiDict([('pvisitor',
+'1c2d2974-3a90-4cc3-a15e-10419271df87'), ('user_language', 'en-US'),
+('logged_in', 'false'), ('session', 'eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiYWY
+1ODllYzIxYjFmZDUxNTQ1ZjQyMGUyYzFhZmEwOTcwZjA2NzNlNyJ9.ZXSuAg.P122WCoW6L-
+zJqMPaLKJse97iFo')])
+[2023-12-15 01:30:26,897] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:81}
+INFO - redirecting from / to /home
+[2023-12-15 01:30:27,088] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:89}
+INFO - /home page loaded
+[2023-12-15 01:30:27,088]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:36} INFO -
+rendering index.html with ImmutableMultiDict([('user_language', 'en-US'),
+('session', '.eJwljktuAzEMQ-_idReWJVtWLjOwfkhQoAVmklXRu8dFlyTBR_6UI8-
+47uX2PF_xUY6Hl1tZNMPG7DJZA70rmGlvvc421dJElBlTGqR4DXbFyRgQsBCg8vhLwHRQYNSlC9biRUn
+RQiuiSbNJFXCi2eaRhdDuCOXE0WrZR15XnP9vYEu7zjye35_xtY2xWXsHOcjVfCS2SBd0wwrEzbl2Mu_
+l9w0XfD9r.ZXSo6A.cw2wocPgpFQhPqqs7daejT4njPU'), ('logged_in', 'false')])
+[2023-12-15 01:30:36,429] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:81}
+INFO - redirecting from / to /home
+[2023-12-15 01:30:36,626] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:89}
+INFO - /home page loaded
+[2023-12-15 01:30:36,626]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:36} INFO -
+rendering index.html with ImmutableMultiDict([('user_language', 'en-US')])
+[2023-12-15 01:32:50,494] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:81}
+INFO - redirecting from / to /home
+[2023-12-15 01:32:50,712] {/home/ivbor/baravaja_fabric_crafts/app/routes.py:89}
+INFO - /home page loaded
+[2023-12-15 01:32:50,712]
+{/home/ivbor/baravaja_fabric_crafts/app/routes_ext/route_cookie.py:36} INFO -
+rendering index.html with ImmutableMultiDict([('user_language', 'pl-PL'),
+('session', 'eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiN2UyYmFlYzE4ZDBhZWU3ZWE1NWR
+mMWUxZTg4YmVjZTEyMDNhNDA2MCJ9.ZXS-Tw.jU_QA5qre2L-KtQv4uyAO3FYp5M')])
+>>>>>>> 7b88e61b23c8c573ce7075c0ac80ea9e4a7241fa
